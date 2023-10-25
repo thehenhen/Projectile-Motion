@@ -10,7 +10,8 @@ function setup(){
     balls[g.ballCount] = new ball(200,380);
     balls[g.ballCount] = new ball(300,380);
     balls[g.ballCount] = new ball(400,380);
-    balls[g.ballCount] = new ball(500,380); 
+    balls[g.ballCount] = new ball(500,380);
+    balls[g.ballCount] = new ball(600,180); 
 }
 
 function draw(){
