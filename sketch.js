@@ -3,22 +3,21 @@ let gravity=0.1;
 
 
 function setup(){
-    createCanvas(1600,500);
+    createCanvas(500,500);
     angleMode(DEGREES);
     g = new game();
-    balls[g.ballCount] = new ball(100,380);
-    balls[g.ballCount] = new ball(200,380);
-    balls[g.ballCount] = new ball(300,380);
-    balls[g.ballCount] = new ball(400,380);
-    balls[g.ballCount] = new ball(500,380);
-    balls[g.ballCount] = new ball(600,180); 
+    balls[g.ballCount] = new ball(50,380);
+    balls[g.ballCount] = new ball(150,380);
+    balls[g.ballCount] = new ball(250,380);
+    balls[g.ballCount] = new ball(350,380);
+    balls[g.ballCount] = new ball(450,380);
 }
 
 function draw(){
-    background(255);
+    background(135, 206, 235);
     fill(50, 168, 82);
     noStroke();
-    rect(0,425,1600,100); 
+    rect(0,425,width,100); 
     g.update();
     g.show();
 }
