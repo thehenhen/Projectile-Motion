@@ -29,8 +29,8 @@ class ball{
         if(this.x<20){
             this.x=max(this.x,20);
             this.vX*=-1;
-        }else if(this.x>1580){
-            this.x=min(this.x,1580);
+        }else if(this.x>width-20){
+            this.x=min(this.x,width-20);
             this.vX*=-1;
         }
         if(this.vX==0 && this.vY==0){//ball stops moving
